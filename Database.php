@@ -83,7 +83,6 @@ class Database
      */
     public function query(string $query, array $params = []): PDOStatement|false
     {
-        $this->dd($query);
         $result = $this->connection->prepare($query);
 
         $result->execute($params);
