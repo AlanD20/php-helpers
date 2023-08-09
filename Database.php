@@ -47,6 +47,7 @@ class Database
         $this->user = $user;
         $this->password = $password;
         $this->database = $database;
+        $this->opts = $opts;
 
         $this->initializeConnection();
 
